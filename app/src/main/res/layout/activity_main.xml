@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#799C27B0"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TableLayout
+            android:layout_width="210dp"
+            android:layout_height="117dp">
+
+            <TableRow
+                android:layout_width="174dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="50pt"
+                    android:layout_height="25pt"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:paddingStart="5pt"
+                    android:paddingTop="5pt"
+                    android:paddingEnd="0pt"
+                    android:text="Palyer X :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/score1"
+                    android:layout_width="25pt"
+                    android:layout_height="25pt"
+                    android:paddingStart="4pt"
+                    android:paddingTop="5pt"
+                    android:text="sco"
+                    android:textColor="#FDFDFD"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="173dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/p2"
+                    android:layout_width="50pt"
+                    android:layout_height="25pt"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:paddingStart="5pt"
+                    android:paddingTop="5pt"
+                    android:text="Palyer O :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/score2"
+                    android:layout_width="25pt"
+                    android:layout_height="25pt"
+                    android:paddingStart="4pt"
+                    android:paddingTop="5pt"
+                    android:text="sco"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5pt"
+                android:layout_marginTop="2pt"
+                android:layout_marginEnd="15pt"
+                android:layout_weight="1"
+                android:background="#2196F3"
+                android:backgroundTint="#2196F3"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5pt"
+                android:paddingTop="5pt"
+                android:paddingRight="5pt"
+                android:paddingBottom="5pt"
+                android:text="reset"
+                android:textColor="#F8F8F8"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/newGame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5pt"
+                android:layout_marginTop="2pt"
+                android:layout_marginEnd="15pt"
+                android:layout_weight="1"
+                android:background="#2196F3"
+                android:backgroundTint="#2196F3"
+                android:paddingLeft="5pt"
+                android:paddingTop="5pt"
+                android:paddingRight="5pt"
+                android:paddingBottom="5pt"
+                android:text="New Game"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/turnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#D8FF9800"
+        android:includeFontPadding="false"
+        android:paddingStart="150dp"
+        android:text="X Turn"
+        android:textColor="#D5D5D5"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="@color/winner"
+        android:paddingLeft="5pt"
+        android:paddingTop="5pt"
+        android:paddingRight="5pt">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elegantTextHeight="false"
+                android:freezesText="false"
+                android:text="O"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elegantTextHeight="false"
+                android:freezesText="false"
+                android:text="X"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elegantTextHeight="false"
+                android:text="O"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="X"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="O"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elegantTextHeight="false"
+                android:freezesText="false"
+                android:text="X"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="O"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elegantTextHeight="false"
+                android:freezesText="false"
+                android:text="O"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:elegantTextHeight="false"
+                android:freezesText="false"
+                android:text="X"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
